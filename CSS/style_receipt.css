@@ -1,0 +1,34 @@
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.main h3 {
+	text-align: center;
+	font-size: 22px;
+	color: #A52A2A
+}
+
+.main p {
+	text-align: center;
+	font-size: 35px;
+	
+}
+
+h1 {
+	font-size: 40px
+}
+
+.foot p{
+	text-align: center;
+	font-size: 22px
+}
+
+body {
+    min-width: 700px;
+}
+
+.main {
+	margin: auto;
+}
