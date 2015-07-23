@@ -1,17 +1,18 @@
 IMG.displayed {
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+
 }
 
 .main h3 {
-	text-align: center;
+	margin-left: 600px;
 	font-size: 22px;
 	color: #A52A2A
 }
 
 .main p {
-	text-align: center;
+	margin-left: 600px;
 	font-size: 35px;
 	
 }
