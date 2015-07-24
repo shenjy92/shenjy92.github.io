@@ -1,0 +1,32 @@
+nav {
+    background-color: black;
+    border-bottom: solid 3px red;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: #EEE;
+}
+nav h1 {
+    display: inline-block;
+    color: white;
+    margin-left: 15px;
+}
+
+nav img {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.nav-div-tabs {
+    margin-top: 35px;
+}
+
+#action-buttons {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
