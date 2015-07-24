@@ -6,13 +6,11 @@ IMG.displayed {
 }
 
 .main h3 {
-	margin-left: 600px;
 	font-size: 22px;
 	color: #A52A2A
 }
 
 .main p {
-	margin-left: 600px;
 	font-size: 35px;
 	
 }
@@ -31,5 +29,4 @@ body {
 }
 
 .main {
-	margin: auto;
 }
