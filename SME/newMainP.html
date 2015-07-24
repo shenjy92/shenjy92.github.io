@@ -18,13 +18,14 @@
     <![endif]-->
 </head>
 <body>
-    <nav>
-        <img src="logo.png"/>
-        <h1>Chequemate</h1>
-        <a href="#" class="pull-right">Logout</a>
+    <nav style="padding-bottom:0px; padding-right:0px; padding-top:0px; position: relative;">
+        <img style="margin-left:20px; margin-top:13px; padding-bottom:12px; padding-top:13px;"src="logo.png"/>
+        <h1 style="position:absolute;margin-left: 40px; margin-top:32px;">ChequeMate</h1>
+        <img style="padding:0px; float:right;" src="Logouticon.jpg">
+        <!--a href="#" style="margin-: 20px; margin-top: 20px;">Logout</a -->
     </nav>
 
-
+    
     <div class="container nav-div-tabs">
         <ul class="nav nav-tabs">
             <li role="presentation" class="active"><a href="#" style="font-size:20px">Drawer</a></li>
@@ -37,18 +38,18 @@
         <button type="submit" class="btn btn-default" data-toggle="modal" data-target="#myModal2" >Deposit All cheques</button>
         <button type="submit" class="btn btn-default">Save All cheque Images</button>
     </div>
-
     <div class="container" id="clps">
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne" style="height: 100px;">
-                            <p style="font-size: 20px;">S$2000</p>
-                            <p>Shen Jun Yao</p>
+                        <div class="panel-heading" role="tab" id="headingOne" style="position:relative;height: 100px;background-color:#D0CCCC">
+                            <p style="font-size: 20px;" class="amt">S$2000</p>
+                            <p class="date">27/07/2015</p> 
+                            <p style=" margin-left:2px;">Shen Jun Yao</p>
 
                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <img src="tri.png" style="width: 20px; height:10px; ">
+                                <img src="tri.png" style="width: 20px; height:10px; " class="tri">
                             </a>
                             <div style="margin-left: 649px;margin-top: -90px;" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav navbar-right">
@@ -74,8 +75,9 @@
                     </div>
 
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo" style="height: 100px;">
+                        <div class="panel-heading" role="tab" id="headingTwo" style="height: 100px;background-color:#D0CCCC">
                             <p style="font-size: 20px;">S$800</p>
+                            <p class="date">23/07/2015</p> 
                             <p>Yann Dar Lee</p>
                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 <img src="tri.png" style="width: 20px; height:10px; ">
@@ -97,14 +99,15 @@
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                             <div class="panel-body">
-                                <img src="c.png" style="width:500px; height:200px;">
+                                <img src="cheuq4.png" style="width:500px; height:200px;">
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingThree" style="height: 100px;">
+                        <div class="panel-heading" role="tab" id="headingThree" style="height: 100px; background-color:#D0CCCC">
                             <p style="font-size: 20px;">S$3472</p>
-                            <p>Jesscia Goh</p>
+                            <p class="date">25/07/2015</p> 
+                            <p>Cai Rui</p>
                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 <img src="tri.png" style="width: 20px; height:10px; ">
                             </a>
@@ -125,7 +128,7 @@
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                             <div class="panel-body">
-                                <img src="c.png" style="width:500px; height:200px;">
+                                <img src="cheuq3.png" style="width:500px; height:200px;">
                             </div>
                         </div>
                     </div>
@@ -138,7 +141,7 @@
 
     <!-- Modals -->
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div style="margin-top: 200px;" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -146,7 +149,7 @@
                     <h4 class="modal-title" id="myModalLabel">Deposit Request</h4>
                 </div>
                 <div class="modal-body">
-                    You are going to deposit S$2000 from Shen Jun Yao into account 003-202003-2.
+                    You are going to deposit S$2000 from Shen Jun Yao into DBS account 003-202003-2.
                     <img src="cheuq2.png" style="width:500px; height:200px;">
 
                 </div>
@@ -158,7 +161,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div style="margin-top: 200px;" class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -176,7 +179,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div style="margin-top: 200px;" class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -195,7 +198,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div style="margin-top: 200px;" class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">

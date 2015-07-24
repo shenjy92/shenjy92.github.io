@@ -15,7 +15,7 @@
        		<h3>Deposit into</h3>
        			<p>DBS/POSB Bank, POSB Savings 001-78391-4 </p>
        		<h3>Date of deposit</h3>
-       			<p>27 July 2015, 20:31:06</p>
+       			<p id="demo">27 July 2015, 20:31:06</p>
        		<h3>Amount</h3>
        			<p>S$ 10,000.00	
        		<h3>Remarks</h3>
@@ -27,5 +27,21 @@
        		<p>Please <span style="color:blue; text-decoration:underline">save</span> or <span style="color:blue; text-decoration:underline">print</span> this receipt for future reference.</p>
        	</div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+    var date = new Date();
+    // var n = d.getTimezoneOffset();
+    var month = date.getMonth() + 1;
+    var outputString = date.getDate() + '/' + month +  ' at ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+    $('#demo').html(outputString);
+    console.log(outputString);
+});
+
+
+</script>
     </body>
 </html>
